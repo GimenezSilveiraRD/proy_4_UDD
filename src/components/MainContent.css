@@ -1,0 +1,19 @@
+.intro {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about {
+    padding: 20px;
+  }
+  
+  .details ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .details li {
+    margin-bottom: 10px;
+  }
+  
