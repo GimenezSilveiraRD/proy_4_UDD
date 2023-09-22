@@ -1,3 +1,20 @@
+:root {
+  --primary-color: #d06b34;
+  --secondary-color: #f5c150;
+  --tertiary-color: #6b8e23;
+  --text-color: #333;
+  --font-size-base: 16px;
+}
+
+body {
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: 'Arial', sans-serif;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -11,32 +28,107 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+      animation: logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
   }
 }
 
 .card {
   padding: 2em;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .read-the-docs {
   color: #888;
+}
+
+/* Responsividad */
+@media (min-width: 768px) {
+  body {
+      font-size: calc(var(--font-size-base) + 2px);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+      font-size: calc(var(--font-size-base) + 4px);
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.flex-item {
+  flex: 1 1 100%;
+}
+
+@media (min-width: 768px) {
+  .flex-item {
+      flex: 1 1 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .flex-item {
+      flex: 1 1 33.33%;
+  }
+}
+
+/* Estilos para enlaces */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover, a:focus {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* Estilos para botones */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover, button:focus {
+  background-color: var(--secondary-color);
 }
