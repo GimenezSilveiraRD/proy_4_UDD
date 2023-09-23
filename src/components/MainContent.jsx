@@ -1,5 +1,7 @@
 import React from 'react';
 import './MainContent.css';
+import Blog from './Blog';
+import ContactForm from './ContactForm';
 
 function MainContent() {
   return (
@@ -23,8 +25,12 @@ function MainContent() {
           <li><strong>Raised:</strong> $25M</li>
         </ul>
       </section>
+      
+      <ContactForm />
+      
     </main>
   );
 }
 
 export default MainContent;
+
