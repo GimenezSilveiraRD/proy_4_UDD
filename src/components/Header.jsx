@@ -4,7 +4,7 @@ import './Header.css';
 function Header() {
   return (
     <header>
-      <h1>Sobre nosotros</h1>
+      <h1>La Española</h1>
       <nav>
         <ul>
           <li>Nuestro menú</li>

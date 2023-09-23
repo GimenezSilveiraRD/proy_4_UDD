@@ -10,7 +10,7 @@ function MainContent() {
         <blockquote>
           "El mejor restaurante al que he asistido en los ultimos meses.  La atención es excelente, todos son muy amables y cordiales y la relación calidad precio es muy buena."
         </blockquote>
-        <cite>Massimo Botura</cite>
+        <cite>Daniel Gimenez</cite>
       </section>
       <section className="about">
         <h2>Tradición española desde 1930</h2>
