@@ -4,7 +4,7 @@ import './Blog.css';
 const Blog = () => {
   return (
     <section className="blog-section">
-      <h2>Noticias del Restaurante</h2>
+      <h2>Noticias</h2>
       <article>
         <h3>Nuestro nuevo menú de primavera</h3>
         <p>Estamos emocionados de presentar nuestro nuevo menú de primavera, lleno de sabores frescos y platos innovadores. Ven y descubre por qué somos el restaurante más hablado de la ciudad.</p>
