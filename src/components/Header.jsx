@@ -8,7 +8,7 @@ function Header() {
       <nav>
         <ul>
           <li>Nuestro menú</li>
-          <li>Reservaciones</li>
+          <li>Reservas</li>
         </ul>
       </nav>
     </header>
